@@ -24,7 +24,7 @@ public class StringUtilsTest {
     }
 
     @Test
-    public void testUpperCase(){
+    public void testToUpperCase(){
         assertEquals("SUBI NO ONIBUS NATAN", stringUtils.toUpperCase("subi no onibus natan"));
     }
 
