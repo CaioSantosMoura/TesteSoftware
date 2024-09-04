@@ -1,5 +1,3 @@
-package org.example;
-
 public class Calculadora {
     public Calculadora(){}
     public static double soma(double a, double b){

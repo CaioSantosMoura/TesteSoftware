@@ -1,17 +1,12 @@
-package org.example;
-
-import org.example.Main;
+import org.junit.Assert;
 import org.junit.Test;
 import static org.junit.Assert.*;
-
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 
 public class TesteCalculadora {
 
     @Test
     public void testSoma(){
-        assertEquals(10.0, Calculadora.soma(2,8), 0);
+        Assert.assertEquals(10.0, Calculadora.soma(2,8), 0);
     }
 
     @Test
