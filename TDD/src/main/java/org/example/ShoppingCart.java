@@ -4,11 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ShoppingCart {
-    private List<String> carts;
+    private List<Item> itens;
 
-    public void addItem(String cart){
-        carts.add(cart);
+    public ShoppingCart(){
+        this.itens = new ArrayList<>();
     }
 
-    public void 
+    public void addItem(Item item) {
+        itens.add(item);
+    }
+
+    public int getItemCount() {
+        return itens.size();
+    }
+
+    public double calculateTotal() {
+        return itens.stream().mapToDouble(Item::getPreco).sum();
+    }
 }
