@@ -6,7 +6,7 @@ import java.util.List;
 public class ShoppingCart {
     private List<Item> itens;
 
-    public ShoppingCart(){
+    public ShoppingCart() {
         this.itens = new ArrayList<>();
     }
 
